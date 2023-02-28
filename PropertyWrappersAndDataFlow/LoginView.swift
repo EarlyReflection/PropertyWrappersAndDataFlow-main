@@ -11,7 +11,6 @@ struct LoginView: View {
     @State private var userName = ""
     @EnvironmentObject private var user: UserManager
    
-    
 // перенести в другой класс
     var valid: Bool {
         if userName.count > 2 {
