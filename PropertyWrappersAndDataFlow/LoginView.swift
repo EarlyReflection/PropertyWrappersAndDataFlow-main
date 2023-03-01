@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var userName = ""
-    @EnvironmentObject private var user: UserManager
+    @EnvironmentObject private var userManager: UserManager
    
 // перенести в другой класс
     var valid: Bool {
-        if userName.count > 2 {
+        if userManager.user.name.count > 2 {
             return true
         } else {
             return false
@@ -23,10 +22,10 @@ struct LoginView: View {
     var body: some View {
         VStack {
             HStack {
-                TextField("Enter your name", text: $userName)
+                TextField("Enter your name", text: $userManager.user.name)
                     .multilineTextAlignment(.center)
                     .padding(.leading, 30)
-                Text("\(userName.count)")
+                Text("\(userManager.user.name.count)")
                     .foregroundColor(valid ? .green : .red)
                     .frame(width: 30)
             }
@@ -40,9 +39,9 @@ struct LoginView: View {
     }
     
     private func registerUser() {
-        if !userName.isEmpty {
-            user.name = userName
-            user.isRegistred.toggle()
+        if !userManager.user.name.isEmpty {
+            userManager.user.isRegistred.toggle()
+            DataManager.shared.saveUser(userManager.user)
         }
     }
 }

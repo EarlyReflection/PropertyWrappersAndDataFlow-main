@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D139D71D29AFD6C600D35F39 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D139D71C29AFD6C600D35F39 /* DataManager.swift */; };
 		D13C5A4029AE3A8E0011AB8D /* PropertyWrappersAndDataFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13C5A3F29AE3A8E0011AB8D /* PropertyWrappersAndDataFlowApp.swift */; };
 		D13C5A4229AE3A8E0011AB8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13C5A4129AE3A8E0011AB8D /* ContentView.swift */; };
 		D13C5A4429AE3A900011AB8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D13C5A4329AE3A900011AB8D /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D139D71C29AFD6C600D35F39 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		D13C5A3C29AE3A8E0011AB8D /* PropertyWrappersAndDataFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PropertyWrappersAndDataFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13C5A3F29AE3A8E0011AB8D /* PropertyWrappersAndDataFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappersAndDataFlowApp.swift; sourceTree = "<group>"; };
 		D13C5A4129AE3A8E0011AB8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,10 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				D13C5A3F29AE3A8E0011AB8D /* PropertyWrappersAndDataFlowApp.swift */,
+				D139D71C29AFD6C600D35F39 /* DataManager.swift */,
 				D13C5A4129AE3A8E0011AB8D /* ContentView.swift */,
 				D13C5A4F29AE60940011AB8D /* LoginView.swift */,
-				D13C5A5329AE69FD0011AB8D /* StarterView.swift */,
 				D13C5A4D29AE44B30011AB8D /* TimeCounter.swift */,
+				D13C5A5329AE69FD0011AB8D /* StarterView.swift */,
 				D13C5A5129AE63AB0011AB8D /* UserManager.swift */,
 				D13C5A4329AE3A900011AB8D /* Assets.xcassets */,
 				D13C5A4529AE3A900011AB8D /* Preview Content */,
@@ -152,6 +155,7 @@
 				D13C5A4E29AE44B30011AB8D /* TimeCounter.swift in Sources */,
 				D13C5A4229AE3A8E0011AB8D /* ContentView.swift in Sources */,
 				D13C5A5429AE69FD0011AB8D /* StarterView.swift in Sources */,
+				D139D71D29AFD6C600D35F39 /* DataManager.swift in Sources */,
 				D13C5A5029AE60940011AB8D /* LoginView.swift in Sources */,
 				D13C5A5229AE63AB0011AB8D /* UserManager.swift in Sources */,
 				D13C5A4029AE3A8E0011AB8D /* PropertyWrappersAndDataFlowApp.swift in Sources */,

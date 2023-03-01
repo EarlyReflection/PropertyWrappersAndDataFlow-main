@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct PropertyWrappersAndDataFlowApp: App {
-    @StateObject private var userManager = UserManager()
+    private let user = DataManager.shared.loadUser()
     
     var body: some Scene {
         WindowGroup {
             StarterView()
-                .environmentObject(userManager)
+                .environmentObject(UserManager(user: user))
         }
     }
 }
