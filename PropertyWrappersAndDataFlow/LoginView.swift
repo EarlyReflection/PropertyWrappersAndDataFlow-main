@@ -9,15 +9,6 @@ import SwiftUI
 
 struct LoginView: View {
     @EnvironmentObject private var userManager: UserManager
-   
-// перенести в другой класс
-    var valid: Bool {
-        if userManager.user.name.count > 2 {
-            return true
-        } else {
-            return false
-        }
-    }
     
     var body: some View {
         VStack {
@@ -26,14 +17,14 @@ struct LoginView: View {
                     .multilineTextAlignment(.center)
                     .padding(.leading, 30)
                 Text("\(userManager.user.name.count)")
-                    .foregroundColor(valid ? .green : .red)
+                    .foregroundColor(userManager.valid ? .green : .red)
                     .frame(width: 30)
             }
             Button(action: registerUser) {
                 Image(systemName: "checkmark.circle")
                 Text("Ok")
             }
-            .disabled(!valid)
+            .disabled(!userManager.valid)
         }
         .padding()
     }

@@ -12,7 +12,9 @@ final class UserManager: ObservableObject {
     
     @Published var user = User()
     
-    @AppStorage("user") private var userData: Data?
+    var valid: Bool {
+        user.name.count > 2
+    }
     
     init() {}
     
